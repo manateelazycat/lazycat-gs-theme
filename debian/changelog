@@ -1,0 +1,23 @@
+deepin-theme-gnome-shell (11.12.2-2) oneiric; urgency=low
+
+  * Fix architecture: any -> all
+
+ -- Zhang Cheng <zhangcheng@linuxdeepin.com>  Wed, 07 Dec 2011 21:04:56 +0800
+
+deepin-theme-gnome-shell (11.12.2-1) oneiric; urgency=low
+
+  * Upstream update
+
+ -- Zhang Cheng <zhangcheng@linuxdeepin.com>  Wed, 07 Dec 2011 20:18:57 +0800
+
+deepin-theme-gnome-shell (11.12.1-1) oneiric; urgency=low
+
+  * Fix install file
+
+ -- Zhang Cheng <zhangcheng@linuxdeepin.com>  Wed, 07 Dec 2011 19:43:57 +0800
+
+deepin-theme-gnome-shell (11.12-1) oneiric; urgency=low
+
+  * Initial release 
+
+ -- Zhang Cheng <zhangcheng@linuxdeepin.com>  Wed, 7 Dec 2011 18:27:23 +0800

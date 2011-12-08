@@ -1,0 +1,2053 @@
+/* Copyright 2009, Red Hat, Inc.
+ *
+ * Portions adapted from Mx's data/style/default.css
+ *   Copyright 2009 Intel Corporation
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms and conditions of the GNU Lesser General Public License,
+ * version 2.1, as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+/*GNOME Shell Tron Legacy theme designed by Sean Wilson http://half-left.deviantart.com/ .*/
+
+stage {
+    font-family: cantarell, sans-serif, Zerothrees;
+}
+
+.shell-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.shell-link:hover {
+    color: rgba(216,247,250,0.9);
+}
+
+.label-shadow {
+    color: rgba(44,44,44,0.8);
+}
+
+.label-real-shadow {
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(0, 0, 0, 0);
+    background-gradient-end: rgba(0, 0, 0, 255);
+    width: 10px;
+}
+
+StScrollBar
+{
+  padding: 0px;
+}
+
+StScrollView StScrollBar
+{
+  min-width: 12px;
+  min-height: 16px;
+}
+
+
+StScrollBar StBin#trough {
+    background-color: rgba(0,0,0,0.7);
+    border: 1px solid rgba(23,196,228,0.5);
+    border-radius: 2px;
+}
+
+StScrollBar StButton#vhandle
+{
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.6);
+    border-radius: 2px;
+}
+
+StScrollBar StButton#hhandle
+{
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.6);
+    border-radius: 2px;
+}
+
+StScrollBar StButton#hhandle:hover,
+StScrollBar StButton#vhandle:hover
+{
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.9);
+    border-radius: 2px;
+}
+
+StTooltip StLabel {
+    padding: 4px;
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.7);
+    background-gradient-end: rgba(0,10,18,0.7);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.6);
+    color: rgba(216,247,250,0.8);
+    font-size: 0.8em;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* PopupMenu */
+
+.popup-menu-boxpointer {
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,62,75,0.8);
+    background-gradient-end: rgba(0,18,22,0.8);
+    box-shadow: 0px 0px 2px 1px rgba(26,219,252,0.6);
+}
+
+.popup-menu {
+    color: rgba(216,247,250,0.8);
+    text-shadow: rgba(255,255,255,0.5) 0px 2px 2px;
+    font-size: 9pt;
+    min-width: 200px;
+}
+
+.popup-sub-menu {
+    background-color: rgba(0,0,0,0);
+}
+
+/* The remaining popup-menu sizing is all done in ems, so that if you
+ * override .popup-menu.font-size, everything else will scale with it.
+ */
+.popup-menu-content {
+    padding: 1em 0em;
+}
+
+.popup-menu-item {
+    padding: .4em 1.75em;
+    spacing: 2em;
+}
+
+.popup-menu-item:active {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(255,255,255,0.9);
+    background-gradient-end: rgba(255,255,255,0.9);
+    box-shadow: 0px 0px 2px 2px rgba(23,196,228,0.8);
+    color: #111;
+}
+
+.popup-image-menu-item {
+}
+
+.popup-separator-menu-item {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 2px;
+    border: 1px solid rgba(26,219,252,0.4);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    height: 0.1em;
+}
+
+.popup-slider-menu-item {
+    height: 1em;
+    min-width: 15em;
+    -slider-height: 0.3em;
+    -slider-background-color: rgba(0,0,0,0.7);
+    -slider-border-color: rgba(23,196,228,0.9);
+    -slider-active-background-color: rgba(23,196,228,0.9);
+    -slider-active-border-color: #fff;
+    -slider-border-width: 0.5px;
+    -slider-handle-radius: 0.5em;
+}
+
+.popup-device-menu-item {
+    spacing: .5em;
+}
+
+.popup-menu-icon {
+    icon-size: 1.14em;
+}
+
+.nm-menu-item-icons {
+    spacing: .5em;
+}
+
+/* Switches (to be used in menus) */
+.toggle-switch {
+    width: 4.5em;
+    height: 1.5em;
+}
+
+.toggle-switch-us {
+    background-image: url("toggle-off-us.svg");
+}
+.toggle-switch-us:checked {
+    background-image: url("toggle-on-us.svg");
+}
+
+.toggle-switch-intl {
+    background-image: url("toggle-off-intl.svg");
+}
+.toggle-switch-intl:checked {
+    background-image: url("toggle-on-intl.svg");
+}
+
+/* Panel */
+
+#panel {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.7);
+    background-gradient-end: rgba(0,10,18,0.7);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.6);
+    border-radius: 0px 0px 6px 6px;
+    border-top: 0px;
+    height: 1.86em;
+    padding-right: 11px;
+}
+
+#panelLeft, #panelCenter, #panelRight {
+    spacing: 4px;
+    font-weight: bold;
+}
+
+#panelLeft {
+    padding-right: 4px;
+}
+
+#panelLeft:rtl {
+    padding-right: 0px;
+    padding-left: 4px;
+}
+
+#panelRight {
+    padding-left: 4px;
+}
+
+#panelRight:rtl {
+    padding-left: 0px;
+    padding-right: 4px;
+}
+
+#appMenu {
+    spacing: 4px;
+}
+
+.panel-button #appMenuIcon {
+    app-icon-bottom-clip: 1px;
+}
+
+.panel-button:active #appMenuIcon,
+.panel-button:checked #appMenuIcon,
+.panel-button:focus #appMenuIcon {
+    app-icon-bottom-clip: 2px;
+}
+
+.app-menu-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.panel-button {
+     -natural-hpadding: 12px;
+    -minimum-hpadding: 6px;
+    font-size: 9pt;
+    color: rgba(216,247,250,0.8);
+    text-shadow: rgba(255,255,255,0.8) 0px 3px 3px;
+}
+
+.panel-menu {
+    -boxpointer-gap: 6px
+}
+
+#panelUserMenu {
+    spacing: 4px;
+}
+
+.status-chooser {
+    spacing: .4em;
+}
+
+.status-chooser .popup-menu-item,
+.status-chooser-combo .popup-menu-item {
+    padding: .4em;
+}
+
+.status-chooser-user-icon {
+    border: 2px solid rgba(160,230,228,0.9);
+    box-shadow: 0px 2px 2px rgba(255,255,255,0.7);
+    border-radius: 4px;
+    width: 48pt;
+    height: 48pt;
+}
+
+.status-chooser-user-icon:hover {
+    border: 2px solid rgba(160,230,228,0.9);
+    box-shadow: 0px 0px 4px 6px rgba(160,230,228,0.7);
+}
+
+.status-chooser-user-name {
+    font-weight: bold;
+    font-size: 1.3em;
+    min-width: 120pt;
+}
+
+.status-chooser-combo {
+    border: 1px solid transparent;
+}
+
+.status-chooser-combo.popup-combo-menu {
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,62,75,0.8);
+    background-gradient-end: rgba(0,18,22,0.8);
+    box-shadow: 0px 0px 2px 1px rgba(26,219,252,0.6);
+    padding: .4em 0em;
+    color: rgba(216,247,250,0.8);
+    font-size: 8.5pt;
+}
+
+.status-chooser-status-item,
+.status-chooser-combo .popup-combobox-item {
+    spacing: .4em;
+}
+
+.panel-button:hover {
+    color: rgba(216,247,250,1.0);
+    text-shadow: rgba(255,255,255,0.9) 0px 3px 3px;
+    transition-duration: 300;
+}
+
+.panel-button:active,
+.panel-button:checked,
+.panel-button:focus {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(255,255,255,0.9);
+    background-gradient-end: rgba(255,255,255,0.9);
+    box-shadow: 0px 2px 2px rgba(255,255,255,0.7);
+    border-radius: 2px;
+    color: #111;
+    transition-duration: 300;
+}
+
+/* The rounded panel corners we draw don't
+ * support transitions, so disable transitions
+ * for the buttons at the left/right edges
+ */
+
+#panelStatus {
+    transition-duration: 0;
+}
+
+#panelStatusMenu {
+    spacing: 4px;
+}
+
+#legacyTray {
+    spacing: 14px;
+    padding-left: 14px;
+}
+
+#legacyTray:compact {
+    spacing: 8px;
+}
+
+.system-status-icon {
+    icon-size: 1.14em;
+}
+
+/* Overview */
+
+#overview {
+    spacing: 12px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.workspaces-view {
+    color: white;
+    spacing: 25px;
+}
+
+.workspace-controls {
+    visible-width: 32px; /* Amount visible before hovering */
+}
+
+.workspace-thumbnails-background {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.7);
+    background-gradient-end: rgba(0,10,18,0.7);
+    border: 1px solid rgba(23,196,228,0.6);
+    border-right: 0px;
+    border-radius: 0px 6px 0px 6px;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.1);
+    padding: 8px;
+}
+
+.workspace-thumbnails-background:rtl {
+    border-right: 1px;
+    border-left: 0px;
+    border-radius: 0px 9px 9px 0px;
+}
+
+.workspace-thumbnails {
+    spacing: 7px;
+}
+
+.workspace-thumbnail-indicator {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.5);
+    background-gradient-end: rgba(0,10,18,0.5);
+    border: 2px rgba(23,220,255,0.9);
+    box-shadow: inset 0px 0px 2px 1px rgba(255,255,255,0.9);
+    
+}
+
+.window-caption {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.7);
+    background-gradient-end: rgba(0,10,18,0.7);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.6);
+    border: 1px solid rgba(23,196,228,0.6);
+    border-radius: 3px;
+    color: #fff;
+    font-size: 9pt;
+    padding: 2px 8px;
+    -shell-caption-spacing: 4px;
+}
+
+.window-close {
+    background-image: url("close-window.svg");
+    height: 24px;
+    width: 24px;
+    -st-background-image-shadow: -2px 2px 6px rgba(0,0,0,0.5);
+    -shell-close-overlap: 16px;
+}
+
+/* Dash */
+
+#dash {
+    color: #fff;
+    font-size: 9pt;
+    padding: 4px 0px;
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.7);
+    background-gradient-end: rgba(0,10,18,0.7);
+    border: 1px solid rgba(23,196,228,0.6);
+    border-left: 0px;
+    border-radius: 0px 8px 8px 0px;
+}
+
+#dash:rtl {
+    border-left: 1px;
+    border-right: 0px;
+    border-radius: 9px 0px 0px 9px;
+}
+
+#dash:empty {
+    height: 100px;
+    width: 60px;
+}
+
+.dash-placeholder {
+    background-image: url("dash-placeholder.svg");
+    height: 27px;
+    width: 48px;
+}
+
+#viewSelector {
+    spacing: 16px;
+    font-size: 10pt;
+}
+
+#viewSelectorTabBar {
+    padding: 16px;
+}
+
+#searchArea {
+    padding: 0px 24px;
+}
+
+#searchEntry {
+    padding: 4px 12px;
+    border-radius: 3px;
+    color: rgba(216,247,250,0.6);
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.4);
+    background-gradient-end: rgba(0,10,18,0.4);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.5);
+    border: 1px solid rgba(23,196,228,0.6);
+    caret-color: rgb(128, 128, 128);
+    caret-size: 1px;
+    width: 250px;
+    transition-duration: 300;
+}
+
+#searchEntry:focus,
+#searchEntry:hover {
+    color: rgba(216,247,250,0.8);
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.8);
+    background-gradient-end: rgba(0,10,18,0.8);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.5);
+    border: 1px solid rgba(23,196,228,0.8);
+    transition-duration: 300;
+}
+
+#searchEntry:hover {
+    color: rgba(216,247,250,0.8);
+    transition-duration: 300;
+}
+
+#searchEntry:focus {
+    color: rgba(216,247,250,0.8);
+    transition-duration: 0;
+}
+
+.search-entry-icon {
+    icon-size: 1.4em;
+    color: rgba(216,247,250,0.5);
+}
+
+.view-tab-title {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.6);
+    background-gradient-end: rgba(0,10,18,0.6);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.6);
+    border: 1px solid rgba(23,196,228,0.5);
+    border-radius: 3px;
+    color: rgba(160,230,228,0.5);
+    padding: 0px 12px;
+    height: 24px;
+}
+
+.view-tab-title:hover {
+    color: rgba(160,230,228,1.0);
+}
+
+.view-tab-title:selected {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.8);
+    background-gradient-end: rgba(0,10,18,0.8);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.9);
+    color: rgba(160,230,228,1.0);
+    height: 24px;
+}
+
+.view-tab-boxpointer {
+    -arrow-border-radius: 9px;
+    -arrow-background-color: rgba(0,0,0,0.5);
+    -arrow-border-width: 2px;
+    -arrow-border-color: rgba(255,255,255,0.5);
+    -arrow-base: 30px;
+    -arrow-rise: 15px;
+}
+
+#searchResults {
+    padding: 20px 10px 10px 10px;
+}
+
+#searchResultsContent {
+    padding: 0 10px;
+    spacing: 8px;
+}
+
+.search-statustext,
+.search-section-header {
+    padding: 4px 12px;
+    spacing: 4px;
+    color: #fff;
+}
+
+.search-section {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.7);
+    background-gradient-end: rgba(0,10,18,0.7);
+    border: 1px solid rgba(23,196,228,0.6);
+    border-radius: 0px 0px 6px 6px;
+}
+
+.search-section-results {
+    color: #ffffff;
+    padding: 6px;
+}
+
+.search-section-list-results {
+    spacing: 4px;
+}
+
+.results-container {
+    spacing: 4px;
+}
+
+.search-providers-box {
+    spacing: 4px;
+}
+
+.dash-search-button {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.7);
+    background-gradient-end: rgba(0,10,18,0.7);
+    box-shadow: 0px 0px 1px 2px rgba(26,219,252,0.5);
+    border: 1px solid rgba(23,196,228,0.6);
+    border-radius: 4px;
+/*    border: 1px solid #808080;*/
+    height: 32px;
+    width: 200px;
+}
+
+.dash-search-button:selected,
+.dash-search-button:hover {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(255,255,255,0.6);
+    background-gradient-end: rgba(255,255,255,0.6);
+    box-shadow: 0px 0px 1px 2px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.8);
+    border-radius: 4px
+}
+
+.dash-search-button-label {
+    color: #fff;
+    font-size: 8.5pt;
+    font-weight: bold;
+}
+
+/* Apps */
+
+.icon-grid {
+    spacing: 24px;
+    -shell-grid-item-size: 72px;
+}
+
+.icon-grid .overview-icon {
+    icon-size: 48px;
+}
+
+.contact-grid {
+    spacing: 32px;
+    -shell-grid-item-size: 200px; /* 2 * -shell-grid-item-size + spacing */
+}
+
+.all-app {
+    padding: 16px 25px 16px 16px;
+    spacing: 20px;
+}
+
+.all-app .icon-grid {
+    -shell-grid-item-size: 72px;
+}
+
+.all-app .overview-icon {
+    icon-size: 48px;
+}
+
+.app-filter {
+    font-size: 10pt;
+    font-weight: bold;
+    height: 40px;
+    color: #cfcfcf;
+    width: 200px;
+}
+
+.app-filter:selected {
+    color: rgba(23,196,228,0.8);
+    background-image: url("filter-selected.svg");
+    background-position: 190px 10px;
+}
+
+.app-filter:hover {
+    color: rgba(23,196,228,0.8);
+
+}
+
+.dash-item-container > .app-well-app {
+    padding: 4px 8px;
+}
+
+.remove-favorite-icon {
+    color: #a0a0a0;
+}
+
+.remove-favorite-icon:hover {
+    color: white;
+    icon-shadow: black 0px 2px 2px;
+}
+
+.contact {
+    width: 272px; /* Same width as two normal results + spacing */
+    height: 118px; /* Aspect ratio = 1.75. Normal US business card ratio */
+    border-radius: 4px;
+    padding: 3px;
+    border: 1px rgba(0,0,0,0);
+    transition-duration: 100;
+}
+
+.contact-content {
+    border-radius: 2px;
+    padding: 8px;
+    width: 232px;
+    height: 84px;
+    background-color: rgba(11,11,11,0.0);
+    color: #fff;
+    text-align: center;
+}
+
+.contact-icon {
+  border-radius: 4px;
+}
+
+.contact-grid {
+    spacing: 36px;
+    -shell-grid-item-size: 272px; /* 2 * -shell-grid-item-size + spacing */
+}
+
+.contact-details {
+  padding: 6px 8px 11px 8px;
+}
+
+.contact-details-alias {
+  font-size: 14px;
+  padding-bottom: 11px;
+}
+
+.contact-details-status {
+  font-size: 11pt;
+}
+
+.contact-details-status-icon {
+  padding-right: 2px;
+}
+
+.contact:hover {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(255,255,255,0.8);
+    background-gradient-end: rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.9);
+    border-radius: 4px;
+    transition-duration: 100;
+}
+
+.app-well-app > .overview-icon,
+.remove-favorite > .overview-icon,
+.search-result-content > .overview-icon {
+    font-size: 8.5pt;
+    color: rgba(216,247,250,1.0);
+    text-align: center;
+    padding: 3px;
+}
+
+.app-well-app.running > .overview-icon {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.6);
+    background-gradient-end: rgba(0,10,18,0.6);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.6);
+    border: 1px solid rgba(23,196,228,0.8);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.app-well-app:selected > .overview-icon,
+.search-result-content:selected > .overview-icon {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.6);
+    background-gradient-end: rgba(0,10,18,0.6);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.6);
+    border: 1px solid rgba(23,196,228,0.8);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.app-well-app:hover > .overview-icon,
+.remove-favorite:hover > .overview-icon,
+.search-result-content:hover > .overview-icon {
+     background-gradient-direction: vertical; 
+    background-gradient-start: rgba(255,255,255,0.8);
+    background-gradient-end: rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.9);
+    border-radius: 4px;
+    color: #111;
+    padding: 2px;
+}
+
+.app-well-menu {
+    font-size: 10pt;
+}
+
+/* LookingGlass */
+
+#LookingGlassDialog
+{
+  background-color: rgba(0,0,0,0.85);
+  spacing: 4px;
+  padding: 4px;
+  border: 2px solid grey;
+  border-radius: 4px;
+
+  color: #88ff66;
+}
+
+#LookingGlassDialog > #Toolbar
+{
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+#LookingGlassDialog .labels {
+  spacing: 4px;
+}
+
+#LookingGlassDialog .notebook-tab {
+  padding: 2px;
+}
+
+#LookingGlassDialog .notebook-tab:hover {
+  color: #00ff00;
+}
+
+#LookingGlassDialog .notebook-tab:selected {
+  border: 1px solid #88ff66;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#LookingGlassDialog .lg-inspector-title {
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.lg-dialog StLabel
+{
+  color: #88ff66;
+}
+
+.lg-dialog StEntry
+{
+  color: #88ff66;
+}
+
+.lg-obj-inspector-title
+{
+  spacing: 4px;
+}
+
+.lg-obj-inspector-button
+{
+  border: 1px solid #88ff66;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.lg-obj-inspector-button:hover
+{
+  border: 1px solid #00ff00;
+}
+
+.lg-dialog .shell-link
+{
+  color: #88ff66;
+}
+
+.lg-dialog .shell-link:hover
+{
+  color: #00ff00;
+}
+
+#LookingGlassDialog StBoxLayout#EvalBox
+{
+  padding: 4px;
+  spacing: 4px;
+}
+
+#LookingGlassDialog StBoxLayout#ResultsArea
+{
+  spacing: 4px;
+}
+
+#lookingGlassExtensions {
+    padding: 4px;
+}
+
+.lg-extension-list {
+    padding: 4px;
+    spacing: 6px;
+}
+
+.lg-extension {
+    border: 1px solid #6f6f6f;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.lg-extension-name {
+    font-weight: bold;
+}
+
+.lg-extension-actions {
+    spacing: 6px;
+}
+
+#LookingGlassPropertyInspector {
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid rgba(26,219,252,0.8);
+    border-radius: 4px;
+    padding: 6px;
+    color: #88ff66;
+}
+
+/* Calendar popup */
+
+#calendarArea {
+    /* this is the width of the entire popup */
+    width: 600px;
+}
+
+.calendar-vertical-separator {
+    background-color: rgba(20,20,20,0.5);
+    border-radius: 2px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: inset 0px 1px 2px rgba(23,220,255,0.2);
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    width: 0.1em;
+}
+
+#calendarPopup {
+    border-radius: 4px;
+    background: rgba(0,0,0,0.9);
+    border: 1px solid rgba(26,219,252,0.8);
+    color: white;
+}
+
+#calendarPopup .calendar {
+    padding: 10px;
+}
+
+.calendar {
+    padding: .4em 1.74em;
+    spacing-rows: 0px;
+    spacing-columns: 0px;
+}
+
+.calendar-month-label {
+    color: rgba(255,255,255,0.8);
+    font-size: 8.5pt;
+    padding: 4px;
+}
+
+.calendar-change-month-back {
+    width: 20px;
+    height: 20px;
+    background-image: url("calendar-arrow-left.svg");
+    border-radius: 4px;
+}
+.calendar-change-month-back:hover {
+    background-color: #fff;
+    box-shadow:  0px 0px 2px 2px rgba(26,219,252,0.8);
+}
+.calendar-change-month-back:active {
+    background-color: #fff;
+    box-shadow:  0px 0px 2px 2px rgba(26,219,252,0.8);
+}
+
+.calendar-change-month-forward {
+    width: 20px;
+    height: 20px;
+    background-image: url("calendar-arrow-right.svg");
+    border-radius: 4px;
+}
+.calendar-change-month-forward:hover {
+    background-color: #fff;
+    box-shadow:  0px 0px 2px 2px rgba(26,219,252,0.8);
+}
+.calendar-change-month-forward:active {
+    background-color: #fff;
+    box-shadow:  0px 0px 2px 2px rgba(26,219,252,0.8);
+}
+
+.datemenu-date-label {
+    padding: .4em 1.75em;
+    font-size: 10pt;
+    color: rgba(255,255,255,0.8);
+}
+
+.calendar-day-base {
+    font-size: 7.5pt;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+}
+
+.calendar-day-base:hover {
+    background-color: #fff;
+    box-shadow:  0px 0px 2px 2px rgba(26,219,252,0.9);
+    color: #111;
+}
+
+.calendar-day-base:active {
+    background-color: rgba(255,255,255,0.8);
+    color: #111;
+}
+
+.calendar-day-heading {
+    color: #fff;
+    padding-top: 1em;
+}
+
+.calendar-week-number {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hack used in lieu of border-collapse - see calendar.js */
+.calendar-day {
+    color: #fff;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+.calendar-day-top {
+    border-top-width: 1px;
+}
+.calendar-day-left {
+    border-left-width: 1px;
+}
+
+.calendar-work-day {
+    border: 1px solid rgba(26,219,252,0.2);
+}
+
+.calendar-nonwork-day {
+    border: 1px solid rgba(200,200,200,0.5);
+}
+
+.calendar-today {
+    background-color: #fff;
+    box-shadow:  0px 0px 2px 2px rgba(26,219,252,0.8);
+    color: #111;
+    font-weight: bold;
+}
+
+.calendar-other-month-day {
+    color: rgba(255,255,255,0.5);
+}
+
+.calendar-day-with-events {
+    font-weight: bold;
+}
+
+.events-header-vbox {
+    spacing: 10px;
+}
+
+.events-header {
+    height: 40px;
+}
+
+.events-header-hbox {
+    spacing: 8px;
+    padding: 0.3em;
+}
+
+.events-day-header {
+    font-size: 10pt;
+    color: #fff;
+    padding-left: 22px;
+    padding-top: 6px;
+}
+
+.events-day-dayname {
+    font-size: 7.5pt;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+}
+
+.events-day-time {
+    font-size: 7.5pt;
+    font-weight: bold;
+    color: #fff;
+    text-align: right;
+}
+
+.events-day-task {
+    font-size: 7.5pt;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.events-day-name-box {
+    width: 20px;
+}
+
+.events-time-box {
+    width: 70px;
+}
+
+.events-event-box {
+}
+
+.url-highlighter {
+    link-color: #fff;
+}
+
+/* Message Tray */
+#message-tray {
+    color: #fff;
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.4);
+    background-gradient-end: rgba(0,10,18,0.8);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.4);
+    border: 1px solid rgba(23,196,228,0.3);
+    border-bottom: 0px;
+    height: 36px;
+}
+
+#notification {
+    font-size: 9pt;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,62,75,0.7);
+    background-gradient-end: rgba(0,18,22,0.7);
+    box-shadow: 0px 0px 2px 1px rgba(26,219,252,0.6);
+    color: #fff;
+    padding: 8px 8px 4px 8px;
+    spacing-rows: 10px;
+    spacing-columns: 10px;
+    width: 34em;
+}
+
+.multi-line-notification {
+    padding-bottom: 8px;
+}
+
+.notification-with-image {
+    min-height: 159px;
+}
+
+.summary-source-button:rtl {
+    padding-left: 12px;
+}
+
+#notification-scrollview {
+    max-height: 10em;
+}
+
+#notification-scrollview > .top-shadow, #notification-scrollview > .bottom-shadow {
+    height: 1em;
+}
+
+#notification-scrollview > StScrollBar {
+    padding-left: 6px;
+}
+
+#notification-body {
+    spacing: 5px;
+}
+
+#notification-actions {
+    spacing: 5px;
+}
+
+.notification-button {
+   background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.6);
+    background-gradient-end: rgba(0,10,18,0.6);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.6);
+    border: 1px solid rgba(23,196,228,0.8);
+    border-radius: 4px;
+    padding: 2px 14px;
+}
+
+.notification-button:hover {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(255,255,255,0.8);
+    background-gradient-end: rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.9);
+    border-radius: 4px;
+}
+
+.notification-button:focus {
+    background-gradient-direction: vertical; 
+    background-gradient-start: #515151;
+    background-gradient-end: #414141;
+    border: 1px solid rgba(44,44,44,0.9);
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.1);
+}
+
+.notification-button:active {
+    background-gradient-direction: vertical; 
+    background-gradient-start: #515151;
+    background-gradient-end: #414141;
+    border: 1px solid rgba(44,44,44,0.9);
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.1);
+}
+
+.notification-icon-button {
+    color: rgba(216,247,250,0.8);
+    padding: 5px;
+}
+
+.notification-icon-button:hover {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(255,255,255,0.8);
+    background-gradient-end: rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.8);
+    border-radius: 4px;
+}
+
+.notification-icon-button:focus {
+    
+}
+
+.notification-icon-button:active {
+    background:  rgba(128,128,128,0.7);
+}
+
+.notification-icon-button > StIcon {
+    icon-size: 24px;
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.6);
+    background-gradient-end: rgba(0,10,18,0.6);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.6);
+    border: 1px solid rgba(23,196,228,0.8);
+    border-radius: 4px;
+    color: rgba(216,247,250,0.8);
+    padding: 8px;
+}
+
+.hotplug-transient-box {
+    spacing: 6px;
+    padding: 2px 72px 2px 12px;
+}
+
+.hotplug-notification-item {
+    padding: 2px 10px;
+    border-radius: 18px;
+    font-size: 10.5pt;
+}
+
+.hotplug-notification-item:focus {
+    padding: 1px 71px 1px 11px;
+}
+
+.hotplug-notification-item-icon {
+    icon-size: 24px;
+    padding: 2px 5px;
+}
+
+.hotplug-resident-box {
+    spacing: 8px;
+}
+
+.hotplug-resident-mount {
+    spacing: 8px;
+    border-radius: 4px;
+
+    color: #ccc;
+}
+
+.hotplug-resident-mount:hover {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(255,255,255,0.8);
+    background-gradient-end: rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.9);
+    border-radius: 4px;
+    color: #111;
+}
+
+.hotplug-resident-mount-label {
+    color: inherit;
+    padding-left: 6px;
+}
+
+.hotplug-resident-mount-icon {
+    icon-size: 24px;
+    padding-left: 6px;
+}
+
+.hotplug-resident-eject-icon {
+    icon-size: 16px;
+}
+
+.hotplug-resident-eject-button {
+    padding: 7px;
+    border-radius: 5px;
+    color: #ccc;
+}
+
+.chat-log-message {
+    color: #fff;
+}
+
+.chat-received {
+    background-gradient-direction: vertical; 
+    border: 1px solid rgba(255,255,255,0.2);
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,18,22,0.9);
+    background-gradient-end: rgba(0,62,75,0.9);
+    color: #fff;
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.chat-sent {
+    border: 1px solid rgba(255,255,255,0.2);
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,18,22,0.2);
+    background-gradient-end: rgba(0,62,75,0.2);
+    color: #fff;
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.chat-meta-message {
+    padding-left: 4px;
+    border-radius: 4px;
+    font-size: 8.5pt;
+    color: rgba(255,255,255,0.6);
+}
+
+#notification StEntry {
+    padding: 4px;
+    border-radius: 3px;
+    color: #fff;
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.6);
+    background-gradient-end: rgba(0,10,18,0.6);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.5);
+    border: 1px solid rgba(23,196,228,0.6);
+    caret-color: rgb(128, 128, 128);
+    caret-size: 1px;
+    width: 250px;
+    transition-duration: 300;
+}
+
+#notification StEntry:focus {
+    border-radius: 3px;
+    color: #fff;
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.6);
+    background-gradient-end: rgba(0,10,18,0.6);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.5);
+    border: 1px solid rgba(23,196,228,0.6);
+    caret-color: rgb(128, 128, 128);
+    caret-size: 1px;
+    width: 250px;
+    transition-duration: 300;
+    box-shadow: 0px 0px 2px 1px rgba(255,255,255,0.4);
+}
+
+.chat-log-message {
+    color: #rgba(255,255,255,0.4);
+}
+
+.subscription-message {
+    font-style: italic;
+}
+
+/* The spacing and padding on the summary is tricky; we want to keep
+ * the icons from touching each other or the edges of the screen, but
+ * we also want them to be "Fitts"-y with respect to the edges, so the
+ * summary area's bottom and right padding must actually be part of
+ * the icons. However, we can't put *all* of the padding into the
+ * icons, because then the summary would be 0x0 when there were no
+ * icons in it, and so you wouldn't be able to hover over it to
+ * activate it.
+ *
+ * Also, the spacing between a summary-source's icon and title is
+ * actually specified as padding-left in source-title, because we
+ * want the spacing to collapse along with the title.
+ */
+
+#summary-mode {
+    padding: 2px 0px 0px 4px;
+    height: 36px;
+}
+
+.summary-source-button {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.summary-source-button:selected .summary-source {
+}
+
+.summary-source-button:expanded:selected .summary-source {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(255,255,255,0.9);
+    background-gradient-end: rgba(255,255,255,0.9);
+    box-shadow: 0px 2px 2px rgba(255,255,255,0.7);
+    border: 1px solid rgba(23,196,228,0.7);
+    border-radius: 4px;
+    color: #111;
+}
+
+.summary-source-button:last-child {
+    padding-right: 12px;
+}
+
+.source-title {
+    font-size: 8.5pt;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
+summary-source-counter {
+    color: #fff;
+    background-color: #3465A4;
+    font-size: 9pt;
+    border-radius: 1em;
+    min-height: 1em;
+    min-width: 1em;
+}
+
+.summary-boxpointer {
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,62,75,0.7);
+    background-gradient-end: rgba(0,18,22,0.7);
+    box-shadow: 0px 0px 2px 1px rgba(26,219,252,0.6);
+    padding: 4px;
+}
+
+.summary-boxpointer #notification {
+    border-radius: 4px;
+    background: rgba(0,0,0,0) !important;
+    padding-bottom: 12px;
+}
+
+summary-boxpointer #summary-right-click-menu {
+    border: 1px solid rgba(255,255,255,0.4);
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,62,75,0.7);
+    background-gradient-end: rgba(0,18,22,0.7);
+    box-shadow: 0px 0px 2px 1px rgba(26,219,252,0.6);
+    font-size: 9pt;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#summary-notification-stack-scrollview {
+    max-height: 18em;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+#summary-notification-stack-scrollview > .top-shadow, #summary-notification-stack-scrollview > .bottom-shadow {
+    height: 1em;
+}
+
+#summary-notification-stack-scrollview:ltr {
+    padding-right: 8px;
+}
+
+#summary-notification-stack-scrollview:rtl {
+    padding-left: 8px;
+}
+
+#notification-scrollview {
+    max-height: 10em;
+}
+
+#notification-scrollview > .top-shadow, #notification-scrollview > .bottom-shadow {
+    height: 1em;
+}
+
+#notification-scrollview:ltr > StScrollBar {
+    padding-left: 6px;
+}
+
+#notification-scrollview:rtl > StScrollBar {
+    padding-right: 6px;
+}
+
+/* App Switcher */
+#altTabPopup {
+    padding: 12px;
+    spacing: 16px;
+}
+
+.switcher-list {
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,62,75,0.7);
+    background-gradient-end: rgba(0,18,22,0.7);
+    box-shadow: 0px 0px 2px 1px rgba(26,219,252,0.6);
+    color: rgba(216,247,250,0.8);
+    padding: 21px;
+    font-size: 9pt;
+}
+
+.switcher-list-item-container {
+    spacing: 8px;
+}
+
+.thumbnail-scroll-gradient-left {
+    border-radius: 4px;
+    background-gradient-direction: horizontal; 
+    background-gradient-start: rgba(0,62,75,1.0);
+    background-gradient-end: rgba(0,18,22,0);
+    border-radius-topright: 0px;
+    border-radius-bottomright: 0px;
+    width: 60px;
+}
+
+.thumbnail-scroll-gradient-right {
+    border-radius: 4px;
+    background-gradient-direction: horizontal; 
+    background-gradient-start: rgba(0,62,75,0);
+    background-gradient-end: rgba(0,18,22,1.0);
+    border-radius-topleft: 0px;
+    border-radius-bottomleft: 0px;
+    width: 60px;
+}
+
+.switcher-list .item-box {
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.switcher-list .item-box:outlined {
+    padding: 6px;
+    border: 1px solid rgba(23,196,228,0.8);
+}
+
+.switcher-list .item-box:selected {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.6);
+    background-gradient-end: rgba(0,10,18,0.6);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.6);
+    border: 1px solid rgba(23,196,228,0.8);
+    border-radius: 4px;
+    color: rgba(216,247,250,0.9);
+}
+
+.switcher-list .thumbnail-box {
+    padding: 12px;
+    spacing: 4px;
+}
+
+.switcher-list .thumbnail {
+    width:  256px;
+}
+
+.switcher-list .separator {
+    width: 1px;
+    background: rgba(255,255,255,0.33);
+}
+
+.ripple-box {
+    width: 52px;
+    height: 52px;
+    background-image: url("corner-ripple.png");
+}
+
+.switcher-arrow {
+    border-color: rgba(0,0,0,0);
+    color: rgba(26,219,252,0.8);
+}
+
+.switcher-arrow:highlighted {
+    border-color: rgba(0,0,0,0);
+    color: rgba(26,219,252,1.0);
+}
+
+/* Workspace Switcher */
+.workspace-switcher-group {
+    padding: 12px;
+}
+
+.workspace-switcher-container {
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,62,75,0.7);
+    background-gradient-end: rgba(0,18,22,0.7);
+    box-shadow: 0px 0px 2px 1px rgba(26,219,252,0.6);
+    padding: 20px;
+}
+
+.workspace-switcher {
+    background: transparent;
+    border: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    spacing: 8px;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.3);
+}
+
+.ws-switcher-active-up {
+    height: 100px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.6);
+    border: 1px solid rgba(23,196,228,0.8);
+    background-image: url("ws-switch-arrow-up.svg");
+}
+
+.ws-switcher-active-down {
+    height: 100px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.6);
+    border: 1px solid rgba(23,196,228,0.8);
+    background-image: url("ws-switch-arrow-down.svg");
+}
+
+.ws-switcher-box {
+    height: 96px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-color: rgba(0,62,75,0.5);
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.3);
+}
+
+/* Modal Dialogs */
+.modal-dialog {
+    font-size: 12pt;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,62,75,0.8);
+    background-gradient-end: rgba(0,18,22,0.8);
+    box-shadow: 0px 0px 2px 1px rgba(26,219,252,0.6);
+    color: #ffffff;
+    padding-right: 42px;
+    padding-left: 42px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.modal-dialog-button {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.7);
+    background-gradient-end: rgba(0,10,18,0.7);
+    box-shadow: 0px 0px 1px 2px rgba(26,219,252,0.5);
+    border: 1px solid rgba(23,196,228,0.6);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 9pt;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+.modal-dialog-button:active,
+.modal-dialog-button:pressed {
+    background-gradient-direction: vertical; 
+    background-gradient-start: #515151;
+    background-gradient-end: #414141;
+    border: 1px solid rgba(44,44,44,0.9);
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.1);
+}
+
+.modal-dialog-button:hover {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(255,255,255,0.6);
+    background-gradient-end: rgba(255,255,255,0.6);
+    box-shadow: 0px 0px 1px 2px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.8);
+    border-radius: 4px
+}
+
+/* Run Dialog */
+.run-dialog-label {
+    font-size: 12px;
+    color: rgba(216,247,250,0.6);
+    padding-bottom: 10px;
+}
+
+.run-dialog-error-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(216,247,250,0.6);
+}
+
+.run-dialog-error-box {
+    padding-top: 15px;
+    spacing: 5px;
+}
+
+.run-dialog-entry {
+    border-radius: 3px; 
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,22,25,0.4);
+    background-gradient-end: rgba(0,0,8,0.4);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.5);
+    border: 1px solid rgba(23,196,228,0.6);
+    color: rgba(216,247,250,0.8);
+    transition-duration: 300;
+    font-size: 12pt;
+    width: 320px;
+    padding: 4px;
+}
+
+.run-dialog {
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,62,75,0.8);
+    background-gradient-end: rgba(0,18,22,0.8);
+    box-shadow: 0px 0px 2px 1px rgba(26,219,252,0.6);
+    padding-right: 21px;
+    padding-left: 21px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.lightbox {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* ShellMountOperation Dialogs */
+.shell-mount-operation-icon {
+    icon-size: 48px;
+}
+
+.mount-password-reask {
+    color: red;
+}
+
+.show-processes-dialog,
+.mount-question-dialog {
+    spacing: 24px;
+}
+
+.show-processes-dialog-subject,
+.mount-question-dialog-subject {
+    font-size: 10pt;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 17px;
+    padding-bottom: 6px;
+}
+
+.show-processes-dialog-subject:rtl,
+.mount-question-dialog-subject:rtl {
+    padding-left: 0px;
+    padding-right: 17px;
+}
+
+.show-processes-dialog-description,
+.mount-question-dialog-description {
+    font-size: 10pt;
+    color: white;
+    padding-left: 17px;
+    width: 28em;
+}
+
+.show-processes-dialog-description:rtl,
+.mount-question-dialog-description:rtl {
+    padding-right: 17px;
+}
+
+.show-processes-dialog-app-list {
+    font-size: 10pt;
+    max-height: 200px;
+    padding-top: 24px;
+    padding-left: 49px;
+    padding-right: 32px;
+}
+
+.show-processes-dialog-app-list:rtl {
+    padding-right: 49px;
+    padding-left: 32px;
+}
+
+.show-processes-dialog-app-list-item {
+    color: #ccc;
+}
+
+.show-processes-dialog-app-list-item:hover {
+    color: white;
+}
+
+.show-processes-dialog-app-list-item:ltr {
+    padding-right: 1em;
+}
+
+.show-processes-dialog-app-list-item:rtl {
+    padding-left: 1em;
+}
+
+.show-processes-dialog-app-list-item-icon:ltr {
+    padding-right: 17px;
+}
+
+.show-processes-dialog-app-list-item-icon:rtl {
+    padding-left: 17px;
+}
+
+.show-processes-dialog-app-list-item-name {
+    font-size: 10pt;
+}
+
+/* End Session Dialog */
+.end-session-dialog-subject {
+    font-size: 12pt;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 17px;
+    padding-bottom: 30px;
+}
+
+.end-session-dialog-description {
+    font-size: 9pt;
+    color: rgba(216,247,250,0.8);
+    padding-bottom: 30px;
+    padding-left: 17px;
+    padding-right: 40px;
+    width: 16em;
+}
+
+.end-session-dialog-logout-icon {
+    border: 1px solid rgba(216,247,250,0.8);
+    border-radius: 2px;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0px 0px 1px 2px rgba(216,247,250,0.6);
+}
+
+.end-session-dialog-shutdown-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.end-session-dialog-app-list {
+    font-size: 9pt;
+    max-height: 200px;
+    padding-top: 42px;
+    padding-left: 49px;
+    padding-right: 32px;
+}
+
+.end-session-dialog-app-list:rtl {
+    padding-right: 49px;
+    padding-left: 32px;
+}
+
+.end-session-dialog-app-list-item {
+    color: #cfcfcf;
+}
+
+.end-session-dialog-app-list-item:hover {
+    color: #fff;
+}
+
+.end-session-dialog-app-list-item:ltr {
+    padding-right: 1em;
+}
+
+.end-session-dialog-app-list-item:rtl {
+    padding-left: 1em;
+}
+
+.end-session-dialog-app-list-item-icon:ltr {
+    padding-right: 17px;
+}
+
+.end-session-dialog-app-list-item-icon:rtl {
+    padding-left: 17px;
+}
+
+.end-session-dialog-app-list-item-name {
+    font-size: 10pt;
+}
+
+.end-session-dialog-app-list-item-description {
+    font-size: 8pt;
+    color: #444444;
+}
+
+/* PolicyKit Authentication Dialog */
+.polkit-dialog {
+    /* this is the width of the entire modal popup */
+    width: 500px;
+}
+
+.polkit-dialog-main-layout {
+    spacing: 24px;
+    padding: 10px;
+}
+
+.polkit-dialog-message-layout {
+    spacing: 16px;
+}
+
+.polkit-dialog-headline {
+    font-size: 12pt;
+    font-weight: bold;
+    color: rgba(216,247,250,0.9);
+}
+
+.polkit-dialog-description {
+    font-size: 9pt;
+    color: #fff;
+}
+
+.polkit-dialog-user-layout {
+    padding-left: 10px;
+    spacing: 10px;
+}
+
+.polkit-dialog-user-layout:rtl {
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.polkit-dialog-user-root-label {
+    color: #fff;
+}
+
+.polkit-dialog-password-label:ltr {
+    padding-right: 0.5em;
+    color: #fff;
+}
+
+.polkit-dialog-password-label:rtl {
+    padding-left: 0.5em;
+    color: #fff;
+}
+
+.polkit-dialog-password-entry {
+    border-radius: 3px; 
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,22,25,0.4);
+    background-gradient-end: rgba(0,0,8,0.4);
+    box-shadow: 0px 0px 2px 3px rgba(26,219,252,0.5);
+    border: 1px solid rgba(23,196,228,0.6);
+    color: rgba(216,247,250,0.8);
+    padding: 4px;
+}
+
+.polkit-dialog-error-label {
+    font-size: 9pt;
+    color: #fff;
+    padding-bottom: 8px;
+}
+
+.polkit-dialog-info-label {
+    font-size: 9pt;
+    padding-bottom: 8px;
+}
+
+/* intentionally left transparent to avoid dialog changing size */
+.polkit-dialog-null-label {
+    font-size: 10pt;
+    color: rgba(0,0,0,0);
+    padding-bottom: 8px;
+}
+
+
+/* Magnifier */
+
+.magnifier-zoom-region {
+    border: 2px solid rgba(128, 0, 0, 255);
+}
+
+.magnifier-zoom-region.full-screen {
+    border-width: 0px;
+}
+
+/* On-screen Keyboard */
+
+#keyboard {
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,62,75,0.8);
+    background-gradient-end: rgba(0,18,22,0.8);
+    box-shadow: 0px 0px 2px 1px rgba(26,219,252,0.6);
+    color: #fff;
+}
+
+.keyboard-layout {
+    spacing: 10px;
+    padding: 10px;
+}
+
+.keyboard-row {
+    spacing: 15px;
+}
+
+.keyboard-key {
+    min-height: 25px;
+    min-width: 25px;   
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(0,42,55,0.6);
+    background-gradient-end: rgba(0,10,18,0.6);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.6);
+    border: 1px solid rgba(23,196,228,0.8);
+    border-radius: 4px;
+    font-size: 12pt;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #ddd;
+}
+
+.keyboard-key:grayed {
+   color: #999;
+}
+
+.keyboard-key:checked,
+.keyboard-key:hover {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(255,255,255,0.8);
+    background-gradient-end: rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.9);
+    border-radius: 4px;
+    color: #444;
+}
+
+.keyboard-key:active {
+    background-gradient-direction: vertical; 
+    background-gradient-start: rgba(255,255,255,1.0);
+    background-gradient-end: rgba(255,255,255,1.0);
+    box-shadow: 0px 0px 2px 2px rgba(26,219,252,0.8);
+    border: 1px solid rgba(23,196,228,0.9);
+    border-radius: 4px;
+    color: #444;
+}
+
+.keyboard-subkeys {
+    color: #fff;
+    padding: 5px;
+    -arrow-border-radius: 10px;
+    -arrow-background-color: rgba(0,62,75,0.8);
+    -arrow-border-width: 2px;
+    -arrow-border-color: rgba(23,196,228,0.8);
+    -arrow-base: 20px;
+    -arrow-rise: 10px;
+    -boxpointer-gap: 5px;
+}

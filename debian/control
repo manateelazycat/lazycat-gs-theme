@@ -1,0 +1,14 @@
+Source: deepin-theme-gnome-shell
+Section: gnome
+Priority: optional
+Maintainer: Zhang Cheng <zhangcheng@linuxdeepin.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: http://www.linuxdeepin.com/
+Vcs-Git: git://github.com/manateelazycat/deepin-gs-theme.git
+
+Package: deepin-theme-gnome-shell
+Architecture: all
+Depends: ${misc:Depends}
+Description: Deepin GNOME shell theme
+ Deepin GNOME shell theme.

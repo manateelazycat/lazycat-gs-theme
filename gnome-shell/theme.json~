@@ -1,0 +1,11 @@
+{ 
+   "shell-theme": {
+   "name": "Adwaita-White", 
+   "author": "Oberon", 
+   "version": "1.3",
+   "type":   "custom",
+   "disabled": false,
+   "thumbnail": "preview.jpeg", 
+   "url": "http://3.bp.blogspot.com/-bX-GCRnAGlQ/TfJ1XYxqpWI/AAAAAAAAAZY/cezQ_MySG1w/s400/adwaita3.jpg"
+    }
+}

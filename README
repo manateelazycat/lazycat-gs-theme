@@ -1,0 +1,8 @@
+Default gnome-shell theme for Linux Deepin.
+
+* Quick start:
+  1> Copy theme files.
+     sudo rm -r /usr/share/gnome-shell/theme && sudo cp -r ./src/* /usr/share/gnome-shell/theme/
+	 
+  2> Use theme.
+     Press Alt + F2, then press r , and RETURN to restart gnome-shell.

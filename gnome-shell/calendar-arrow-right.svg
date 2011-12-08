@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="16"
+   height="16"
+   id="svg2">
+  <defs
+     id="defs4">
+    <linearGradient
+       x1="27.164471"
+       y1="10.241117"
+       x2="34.661797"
+       y2="10.512563"
+       id="linearGradient4961"
+       xlink:href="#linearGradient4324"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-63.999996,0)" />
+    <linearGradient
+       x1="-17.784681"
+       y1="9.8260183"
+       x2="-11.504409"
+       y2="9.6024895"
+       id="linearGradient4957"
+       xlink:href="#linearGradient4095"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.92219219,0,0,0.87902198,-17.623177,2.3346908)" />
+    <radialGradient
+       cx="17.070044"
+       cy="11.380459"
+       r="15.102448"
+       fx="17.070044"
+       fy="11.380459"
+       id="radialGradient4951"
+       xlink:href="#linearGradient4513"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.1735248,0.03236996,-0.01319539,0.88602358,-99.636963,0.38809252)" />
+    <linearGradient
+       id="linearGradient4095">
+      <stop
+         id="stop4097"
+         style="stop-color:#131313;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop4099"
+         style="stop-color:#131313;stop-opacity:0"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4324">
+      <stop
+         id="stop4326"
+         style="stop-color:#052828;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop4328"
+         style="stop-color:#042121;stop-opacity:0.78536588"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4513">
+      <stop
+         id="stop4515"
+         style="stop-color:#b9f2ff;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop4517"
+         style="stop-color:#092e35;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <radialGradient
+       cx="17.070044"
+       cy="11.380459"
+       r="15.102448"
+       fx="17.070044"
+       fy="11.380459"
+       id="radialGradient3093"
+       xlink:href="#linearGradient4513"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.1735248,0.03236996,-0.01319539,0.88602358,-32.953421,-12.164816)" />
+    <linearGradient
+       x1="-17.784681"
+       y1="9.8260183"
+       x2="-11.504409"
+       y2="9.6024895"
+       id="linearGradient3099"
+       xlink:href="#linearGradient4095"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.92219219,0,0,0.87902198,49.060365,-10.218218)" />
+    <linearGradient
+       x1="27.164471"
+       y1="10.241117"
+       x2="34.661797"
+       y2="10.512563"
+       id="linearGradient3103"
+       xlink:href="#linearGradient4324"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(2.683546,-12.552909)" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g3883">
+    <rect
+       width="0.74626386"
+       height="14.010315"
+       rx="1.2606682"
+       ry="0"
+       x="3.3395426"
+       y="1.0011922"
+       id="rect4231"
+       style="opacity:0.90540538;fill:#d0f6ff;fill-opacity:1;stroke:none" />
+    <rect
+       width="0.74626386"
+       height="7.7756424"
+       rx="1.2606682"
+       ry="0"
+       x="7.0622416"
+       y="3.9600201"
+       id="rect4403"
+       style="opacity:0.90540538;fill:#d0f6ff;fill-opacity:1;stroke:none" />
+    <rect
+       width="0.74626386"
+       height="3.5487459"
+       rx="1.2606682"
+       ry="0"
+       x="10.37177"
+       y="6.1791401"
+       id="rect4405"
+       style="opacity:0.90540538;fill:#d0f6ff;fill-opacity:1;stroke:none" />
+    <rect
+       width="0.74626386"
+       height="1.827227"
+       rx="1.2606682"
+       ry="0"
+       x="12.44772"
+       y="7.1411653"
+       id="rect3881"
+       style="opacity:0.90540538;fill:#d0f6ff;fill-opacity:1;stroke:none" />
+  </g>
+</svg>
