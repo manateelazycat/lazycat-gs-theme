@@ -208,7 +208,7 @@ StTooltip StLabel {
     border: 1px solid rgba(23,196,228,0.6);
     border-radius: 0px 0px 6px 6px;
     border-top: 0px;
-    height: 1.86em;
+    height: 34px;
     padding-right: 11px;
 }
 
