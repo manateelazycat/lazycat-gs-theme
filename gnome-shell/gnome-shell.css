@@ -200,6 +200,27 @@ StTooltip StLabel {
 
 /* Panel */
 
+#panelActivities {
+	padding: 1px 0px 0px 0px;
+	border-radius-topleft: 0px;
+	border-radius-bottomleft: 0px;
+    background-image: url("logo.png");
+    width: 65px;
+    height: 32px;
+    color: rgba(0,0,0,0.0);
+}
+
+.panelActivitiesHover {
+}
+
+#panelActivities:hover {
+    background-image:  url("logo.png");
+}
+#panelActivities:active,
+#panelActivities:overview {
+    background-image:  url("logoActive.png");
+}
+
 #panel {
     background-gradient-direction: vertical; 
     background-gradient-start: rgba(0,42,55,0.7);
